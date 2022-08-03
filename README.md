@@ -108,7 +108,7 @@ manager. You can manually specify the package manager with the `manager` option.
 with:
   github_token: ${{ secrets.GITHUB_TOKEN }}
   directory: packages/client/
-  manager: yarn
+  packageManager: yarn
 ```
 
 ## Feedback
