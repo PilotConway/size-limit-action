@@ -28,6 +28,9 @@ class Term {
     packageManager?: string
   ): Promise<{ status: number; output: string }> {
     const manager = packageManager || this.getPackageManager(directory);
+    console.log(`Using package manager: ${manager}`);
+    console.log(`Input manager: ${packageManager}`);
+    console.log(`Detected manager: ${this.getPackageManager(directory)}`);
     let output = "";
 
     if (branch) {
