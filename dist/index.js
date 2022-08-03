@@ -12142,9 +12142,6 @@ class Term {
     execSizeLimit(branch, skipStep, buildScript, cleanScript, windowsVerbatimArguments, directory, script, packageManager) {
         return __awaiter(this, void 0, void 0, function* () {
             const manager = packageManager || this.getPackageManager(directory);
-            console.info(`Using package manager: ${manager}`);
-            console.info(`Input manager: ${packageManager}`);
-            console.info(`Detected manager: ${this.getPackageManager(directory)}`);
             let output = "";
             if (branch) {
                 try {
